@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ViewChildComponent } from '../view-child/view-child.component';
+import { HelpService } from '../help.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,11 @@ export class HomeComponent implements OnInit {
 
   msg = false;
   @ViewChild(ViewChildComponent) child: ViewChildComponent;
-  constructor() { }
+  constructor(
+    public helpService: HelpService
+  ) {
+    this.helpService.registerHomeApp(this);
+   }
 
   ngOnInit(): void {
     
@@ -26,5 +31,7 @@ export class HomeComponent implements OnInit {
   ngOnChanges(): void{
     console.log('Changed message '+this.child.message);
   }
+
+  
 
 }
