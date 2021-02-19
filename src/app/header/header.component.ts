@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 declare var $: any;
+import { HelpService } from '../help.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,11 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public helpService: HelpService
+  ) { 
+    this.helpService.registerHeaderApp(this);
+  }
 
   ngOnInit(): void {
   }
