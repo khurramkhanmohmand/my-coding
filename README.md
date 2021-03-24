@@ -123,7 +123,9 @@ Lazy Loading:
 
 https://medium.com/@thiago.reis/how-to-implement-lazy-loading-in-angular-c8dcbf165561
 
+Date and Formate: 
 
+https://www.javatpoint.com/typescript-date-object
 
  General things:
 
