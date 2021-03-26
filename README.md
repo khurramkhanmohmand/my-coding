@@ -127,6 +127,10 @@ Date and Formate:
 
 https://www.javatpoint.com/typescript-date-object
 
+Chatbox:
+
+https://www.npmjs.com/package/ngx-socket-io
+
  General things:
 
  General problems and solutions
